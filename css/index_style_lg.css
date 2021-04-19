@@ -1,0 +1,103 @@
+#home {
+    background-image: url("../images/backgrounds/download.webp");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#home .content {
+    margin: auto 0;
+    text-align: center;
+}
+
+
+#home .content h2 {
+    font-weight: 900;
+    font-size: 3.5rem !important;
+}
+
+#home .content button:first-of-type {
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all ease 0.7s;
+}
+
+#home .content button:first-of-type:hover {
+    background-color: #aaa;
+    color: #000;
+}
+
+#home .content button:nth-of-type(2) {
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all ease 0.7s;
+}
+
+#home .content button:nth-of-type(2):hover {
+    color: #000 !important;
+}
+
+
+
+/* ----------------------------------------------------------------- */
+
+nav .navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav .navbar .row {
+    background-color: transparent !important;
+    justify-content: space-between;
+    margin: auto;
+}
+
+nav .navbar .row img {
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav .navbar .row ul li {
+    margin: 0 15px;
+    color: #fff;
+}
+
+nav .navbar .row ul li a {
+    color: #fff !important; 
+    transition: all ease 0.8s;
+}
+
+nav .navbar .row ul li a:hover {
+    color: rgb(179, 34, 34) !important;
+}
+
+/* ---------------------------------------------------------------------- */
+.web-design h2, .web-dev h2 ,.seo-analysis h2{
+    font-size: 1.25rem !important;
+    /* color: red !important; */
+}
+
+.web-design p, .web-dev p ,.seo-analysis p{
+    font-size: 1rem !important;
+    /* color: #aaa !important; */
+}
+/* ----------------------------------------------------------------- */
+
+#testimonial  h2{
+    font-size: 2.5rem !important;
+    /* color: green !important; */
+}
+#testimonial  button {
+    text-align: center;
+    font-weight: 700 !important;
+    font-size: 2rem !important;
+    margin: 0 50px;
+  } 
+#testimonial p{
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+}
+#testimonial .owl-carousel h3{
+    font-size: 2rem !important;
+}

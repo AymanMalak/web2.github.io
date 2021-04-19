@@ -1,0 +1,303 @@
+/* ---------------------------- Global style --------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------------------------- Custom style --------------------------------------- */
+.head-hover {
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+.head-hover:hover {
+  color: #09c !important;
+}
+
+/* ---------------------------- NavBar style --------------------------------------- */
+nav.navbar {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+nav.navbar .row img {
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav.navbar .row ul li {
+  color: #fff;
+  margin: 0 15px;
+}
+
+nav.navbar .row ul li a {
+  color: #fff !important;
+  font-weight: 600;
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+nav.navbar .row ul li a:hover {
+  color: #ffde00 !important;
+}
+
+/* ---------------------------- Home Section style --------------------------------------- */
+#home {
+  background-image: url("../images/backgrounds/download.webp");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+#home .content {
+  margin: auto 0;
+  text-align: center;
+}
+
+#home .content h2 {
+  font-weight: 900;
+  font-size: 3.5rem;
+}
+
+#home .content h2 span {
+  color: yellow;
+}
+
+#home .content button:first-of-type {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1.1rem !important;
+  -webkit-transition: all ease 0.7s;
+  transition: all ease 0.7s;
+  min-width: 170px !important;
+}
+
+#home .content button:first-of-type:hover {
+  background-color: #794343;
+}
+
+#home .content button:nth-of-type(2) {
+  border: 1px solid #fff;
+  color: #fff;
+  -webkit-transition: all ease 0.7s;
+  transition: all ease 0.7s;
+  min-width: 170px !important;
+}
+
+#home .content button:nth-of-type(2):hover {
+  color: #000 !important;
+}
+
+/* ---------------------------- About Section style --------------------------------------- */
+#about .content {
+  width: 85%;
+}
+
+#about .content h2 {
+  font-weight: 800;
+}
+
+#about .content p {
+  width: 86%;
+}
+
+/* ---------------------------- portfolio Section style --------------------------------------- */
+#portfolio {
+  margin: 0;
+  padding: 0;
+}
+
+#portfolio h2 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+#portfolio img {
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+#portfolio img:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+/* ---------------------------- testimonial Section style --------------------------------------- */
+#testimonial {
+  background-image: url("../images/backgrounds/testiomnials-background.webp");
+  background-size: cover;
+}
+
+#testimonial .container button {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3rem;
+  margin: 0 50px;
+}
+
+#testimonial .container .content p {
+  width: 100%;
+  background-color: #6a4d8a;
+}
+
+/* ---------------------------- Services style --------------------------------------- */
+#services .container h2 {
+  font-size: 2rem !important;
+}
+
+/* ---------------------------- Blog style --------------------------------------- */
+#blog {
+  background-color: #222f36 !important;
+  margin: 0 auto;
+}
+
+#blog button {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+#blog button:hover {
+  background-color: #337ab7 !important;
+}
+
+#blog p {
+  font-size: 0.9rem !important;
+}
+
+#blog h3 {
+  font-size: 1.4rem !important;
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  color: #1d173f;
+  opacity: 0.7;
+}
+
+#blog h3:hover {
+  color: #ffde00;
+}
+
+#blog a {
+  -webkit-transition: ease all 0.8s;
+  transition: ease all 0.8s;
+}
+
+#blog a:hover {
+  text-decoration: none;
+  color: #222f36 !important;
+}
+
+/* ---------------------------- Team style --------------------------------------- */
+#team {
+  background-image: url(https://colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png) !important;
+}
+
+#team h3 {
+  font-size: 1.3rem !important;
+}
+
+#team h5 {
+  font-size: 1rem;
+}
+
+#team p {
+  font-size: 0.9rem;
+}
+
+#team img {
+  height: 60%;
+  border-radius: 50%;
+}
+
+/* ---------------------------- Numbers style --------------------------------------- */
+.numbers {
+  background-image: url("../images/backgrounds/download.jpg");
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.numbers span {
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.numbers p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ---------------------------- Contact style --------------------------------------- */
+#contact .upper h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#contact .upper i {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0 7px;
+}
+
+#contact .upper p {
+  font-size: 0.9rem;
+}
+
+#contact form label,
+#contact form input,
+#contact form textarea {
+  color: #aaa;
+  font-weight: 500;
+}
+
+#contact form input,
+#contact form textarea {
+  background-color: rgba(250, 250, 250, 0.942);
+}
+
+/* ---------------------------- Footer style --------------------------------------- */
+footer {
+  background-color: #353434;
+}
+
+footer h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem !important;
+}
+
+footer ul li {
+  color: #aaa;
+  padding: 0 5px;
+  list-style-type: square;
+}
+
+footer ul li a {
+  -webkit-transition: color ease 0.5s;
+  transition: color ease 0.5s;
+  color: #aaa;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+/* ---------------------------- Copy-Right style --------------------------------------- */
+.copy-right {
+  background-color: #202020;
+}
+/*# sourceMappingURL=index.css.map */

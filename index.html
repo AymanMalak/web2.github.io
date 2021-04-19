@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website 2</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- <link rel="stylesheet" href="css/slidein.css"> -->
+    <link rel="stylesheet" href="css/floating-totop-button.min.css">
+    <link rel="stylesheet" href="css/FadeJr.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="node_modules/aos/dist/aos.css"> -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="css/index_style_xl.css" media="screen and (min-width:993px) and (max-width:1500px)" rel="stylesheet">
+    <link href="css/index_style_lg.css" media="screen and (min-width:768px) and (max-width:992px)" rel="stylesheet">
+    <link href="css/index_style_md.css" media="screen and (min-width:576px) and (max-width:767px)" rel="stylesheet">
+    <link href="css/index_style_sm.css" media="screen and  (min-width:376px) and (max-width:575px) " rel="stylesheet">
+    <link href="css/index_style_xs.css" media="screen and (max-width:375px)" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="loader">
+        <img src="images/loading-animated-gif-1.gif" alt="loading ...">
+    </div>
+
+    <style>
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: white;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            /* margin: auto; */
+        }
+        
+        .loader.hidden {
+            animation: fadeOut 1s;
+            animation-fill-mode: forwards;
+        }
+        
+        .loader img {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+        
+        @keyframes fadeOut {
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
+
+    <script>
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+        });
+    </script>
+
+
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light  " id="nav-menu">
+        <div class="container">
+            <div class="row justify-content-between w-100">
+                <a class="nav-link" href="#" id="ildy"> <img src="images/img2/cropped-footer-logo-1.webp"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center m-auto" id="navbarNav">
+                    <ul class="navbar-nav" id="navigation">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Out Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- /NavBar -->
+
+    <!-- Home -->
+    <section id="home" class="py-5">
+        <div class="container py-5">
+            <div class="py-5 row justify-content-center align-items-center">
+                <div class="content py-5">
+                    <h2 class="text-white mt-5 mb-3 ">Clean<span>.</span>Slick<span>.</span>Pixel Perfect
+                    </h2>
+                    <p class="my-4 w-75 m-auto text-white animate-typing" style="height: 100px" data-animate-loop="true" data-type-speed="70" data-type-delay="800" data-remove-speed="50" data-remove-delay="2000">lldy is a great one-page theme, perfect for developers and designers but also for someone who just wants a new website for his business. Try it now!</p>
+
+                    <button id="btt" class="btn btn-lg text-black btn-transparent px-5 mt-4  py-3 mr-3 font-weight-bold " style="margin: 10px 15px;padding: 0 70px;">Learn
+                        More</button>
+                    <button class="btn btn-lg text-white btn-warning px-5 mt-4  py-3 ml-3 font-weight-bold " style="margin: 10px 15px;padding: 0 70px;">
+                        Download</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Home -->
+
+    <!-- About -->
+    <section id="about" class="bg-white py-5">
+        <div class="content text-center py-3 m-auto">
+            <h2 style="opacity: 0.8;" class="head-hover d-inline">About</h2>
+            <p class="pt-5 m-auto text-muted magic" data-aos="fade-up" style="transition-duration: 0.8s;font-size: 1.1rem;">
+                It is an amazng one-page theme with great features that offers an incredible experience. It is easy to install, make changes, adapt for your business. A modern design with clean lines and styling for a wide variety of content, exactly how a business design
+                should be. You can add as many images as you want to the main header area and turn them into slider.</p>
+
+            <div class="container py-5">
+                <div class="row flex-wrap ">
+                    <div class="col-lg-4 col-md-4 col-11 mx-auto my-4 text-danger" data-aos="fade-up-right" style="transition-duration: 0.4s; font-weight: 800;">
+
+                        <div class="percentage py-2 ">
+                            60 <i class="fa fa-percent" aria-hidden="true"></i>
+                        </div>
+                        <div class="progress" style="height: 5px;" title="60%">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="w-100 text-left py-2">
+                            <i style="font-family: serif;font-size: 1.4rem;"> <b>A</b> </i>
+                            <span class="px-1"> Typography </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-11 mx-auto my-4 text-warning" data-aos="fade-up-right" style="transition-duration: 0.8s; font-weight: 800;">
+
+                        <div class="percentage py-2 ">
+                            82 <i class="fa fa-percent" aria-hidden="true"></i>
+                        </div>
+                        <div class="progress" style="height: 5px;" title="82%">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 82% " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="w-100 text-left py-3 ">
+                            <i class="fas fa-pen"></i>
+                            <span class="px-1"> Design </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-11 mx-auto my-4 text-info" data-aos="fade-up-right" style="transition-duration: 1.2s; font-weight: 800;">
+
+
+                        <div class="percentage py-2 ">
+                            90 <i class="fa fa-percent" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="progress" style="height: 5px;" title="90%">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="w-100 text-left py-3 ">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                            <span class="px-1"> Development </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /About -->
+
+    <!-- Project -->
+    <section id="portfolio" class=" w-100 bg-light pt-5 pb-1 m-0 text-center">
+        <h2 class="  head-hover text-dark d-inline text-center  ">Projects</h2>
+        <p class="text-muted pt-3 text-center">You'll love our work. Check it out!</p>
+        <div class="row pt-5 m-0">
+            <img class="col-lg-3 col-md-3 col-sm-6 my-2 col-12   p-0 m-0 " data-aos="flip-left" src="images/img2/front-page-project-4.webp" alt="project-1" title="project-1" style="transition-duration: 1s;">
+            <img class="col-12 col-md-3 col-sm-6 my-2 col-12   p-0 m-0 " data-aos="flip-left" src="images/img2/front-page-project-3.webp" alt="projec-2" title="projec-2" style="transition-duration: 1s;;">
+            <img class="col-12 col-md-3 col-sm-6 my-2 col-12   p-0 m-0 " data-aos="flip-left" src="images/img2/front-page-project-2.webp" alt="project-3" title="project-3" style="transition-duration: 1s;;">
+            <img class="col-12 col-md-3 col-sm-6 my-2 col-12   p-0 m-0 " data-aos="flip-left" src="images/img2/front-page-project-1.webp" alt="project4" title="project-4" style="transition-duration: 1s;">
+        </div>
+    </section>
+    <!-- /Project -->
+
+    <!-- Testimoial -->
+    <section id="testimonial" class="text-center text-white pt-5 ">
+        <h2 class="font-weight-bold d-inline head-hover" style="font-size: 2.5rem;">Testimonials</h2>
+        <div class="container">
+            <div class="owl-carousel">
+                <div class="content col-md-11 m-auto">
+                    <img class="m-auto py-4" style="border-radius: 50%; width: 140px;" src="images/Aigars-Silkalns-127x127.webp" alt="">
+                    <p class="text-center w-100 p-5"><q>Awesome theme with great design and awesome support. If you
+                            don’t know how to code your own
+                            WordPress theme, but you still want a good-looking website for your business, Illdy might be
+                            exactly what you need. It is a slick theme with a lot of of features to choose from. You can
+                            customize whatever section you want and you can rest assure that no matter what device your
+                            website is viewed on – it looks great.</q></p>
+                    <h3 class="font-weight-bold py-3">Aligars Silkalns</h3>
+                </div>
+                <div class="content col-md-11 m-auto">
+                    <img class="m-auto py-4" style="border-radius: 50%; width: 140px;" src="images/redhead-1123645_960_720-1-127x127.webp" alt="">
+                    <p class="text-center w-100 p-5"><q>Awesome theme with great design and awesome support. If you
+                            don’t know how to code your own
+                            WordPress theme, but you still want a good-looking website for your business, Illdy might be
+                            exactly what you need. It is a slick theme with a lot of of features to choose from. You can
+                            customize whatever section you want and you can rest assure that no matter what device your
+                            website is viewed on – it looks great.</q></p>
+                    <h3 class="font-weight-bold py-3">Jane Smith</h3>
+                </div>
+                <div class="content col-md-11 m-auto">
+                    <img class="m-auto py-4" style="border-radius: 50%; width: 140px;" src="images/mike-muller-127x127.webp" alt="">
+                    <p class="text-center w-100 p-5"><q>Awesome theme with great design and awesome support. If you
+                            don’t know how to code your own WordPress theme, but you still want a good-looking website
+                            for your business, Illdy might be exactly what you need. It is a slick theme with a lot of
+                            of features to choose from.</q></p>
+                    <h3 class="font-weight-bold py-3">Mike Muller</h3>
+                </div>
+                <div class="content col-md-11 m-auto">
+                    <img class="m-auto py-4" style="border-radius: 50%; width: 140px;" src="images/hombre-joven-cara-alegre-estudiante-127x127.webp" alt="">
+                    <p class="text-center w-100 p-5"><q>Awesome theme with great design and awesome support. If you
+                            don’t know how to code your own WordPress theme, but you still want a good-looking website
+                            for your business, Illdy might be exactly what you need. It is a slick theme with a lot of
+                            of features to choose from.</q></p>
+                    <h3 class="font-weight-bold py-3">John Doe</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Testimoial -->
+
+    <!-- Services -->
+    <section id="services" class="text-center py-5">
+        <div class="container text-center">
+            <h2 style="font-size: 2.5rem;" class="fade-jr head-hover d-inline" style="transition-delay: 0.2s;">
+                <b>Services</b></h2>
+            <span class="d-block text-muted fade-jr py-3" style="transition-delay: 0.3s;">In order to help you grow your
+                business, our
+                carefully selected experts can advise
+                you
+                in in the following
+                areas:</span>
+            <div class="row justify-content-center pt-5">
+                <div class=" d-flex flex-column text-danger col-12 col-xl-4 col-lg-4 web-design" data-aos="fade-down-right" style="transition-duration: 0.8s;transition-delay: 0.4s">
+                    <b>
+                        <i class="fas fa-pen" style="font-size:2rem"></i>
+                    </b>
+                    <h2 class="py-2"><b>Web Design</b></h2>
+                    <p class="text-muted pt-3 col ">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...</p>
+                </div>
+                <div class=" d-flex flex-column text-warning col-12 col-xl-4 col-lg-4 web-dev" data-aos="fade-down-right" style="transition-duration: 0.8s;transition-delay: 0.8s">
+                    <b>
+                        <i class="fa fa-code" style="font-size:2rem" aria-hidden="true"></i>
+
+                    </b>
+                    <h2 class="py-2"><b>WEB DEVELOPMENT</b></h2>
+                    <p class="text-muted pt-3  col ">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...</p>
+
+                </div>
+                <div class=" d-flex flex-column text-info col-12 col-xl-4 col-lg-4 seo-analysis" data-aos="fade-down-right" style="transition-duration: 0.8s;transition-delay: 1.2s">
+                    <b>
+                        <i class="fa fa-search" style="font-size:2rem" aria-hidden="true"></i>
+                    </b>
+                    <h2 class="py-2"><b>SEO Analisys</b></h2>
+                    <p class="text-muted pt-3 col ">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Services -->
+
+    <!-- Blog -->
+    <section id="blog" class="text-center py-5 px-0 m-0">
+        <h2 class="text-white font-weight-bold pt-3 head-hover d-inline pb-1">Latest News</h2>
+        <span class="d-block text-muted">If you are interested in the latest articles in
+            the industry, take a sneak peek
+            at our blog. You have nothing to loose!
+        </span>
+        <button title="See blog" class="btn bg-warning text-white font-weight-bold my-5 py-3 px-4 fade-jr" style="transition-delay: 0.2s;"> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> See
+            blog</button>
+
+        <div class="container">
+            <div class="row m-auto justify-content-center">
+                <div class=" my-2 col-12 col-xl-4 col-lg-4 col-md-4 fade-jr" style="transition-delay: 0.2s;">
+                    <img class="card-img-top" style="width: 100%; height: 200px;" src="images/photo-1449168013943-3a15804bb41c-360x213.webp" alt="Card image cap">
+                    <div class="card-body bg-white text-left">
+                        <h3 title="We Have Made Illdy Theme SEO Friendly" style="cursor: pointer;" class="card-title d-block font-weight-bold pt-3">We Have Made Illdy Theme SEO Friendly</h3>
+                        <p class="card-text py-4 text-muted">Illdy One Page WordPress theme is fully SEO friendly and is ready to help you to achieve the highest rankings…</p>
+                        <a title="Read More" href="#" class=" text-warning"> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Read More</a>
+                    </div>
+                </div>
+                <div class=" my-2 col-12 col-xl-4 col-lg-4 col-md-4 fade-jr" style="transition-delay: 0.4s;">
+                    <img class="card-img-top" style="width: 100%; height: 200px;" src="images/photo-1450101215322-bf5cd27642fc-360x213.webp" alt="Card image cap">
+                    <div class="card-body bg-white text-left">
+                        <h3 title="Stunning One Page WordPress Theme For Masses" style="cursor: pointer;" class="card-title d-block font-weight-bold pt-3">Stunning One Page WordPress Theme For Masses</h3>
+                        <p class="card-text py-4 text-muted">This theme is not just free, it is free for private and commercial use since it is licensed under GPL…</p>
+                        <a title="Read More" href="#" class=" text-warning"> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Read More</a>
+                    </div>
+                </div>
+                <div class=" my-2 col-12 col-xl-4 col-lg-4 col-md-4 fade-jr" style="transition-delay: 0.6s;">
+                    <img class="card-img-top" style="width: 100%; height: 200px;" src="images/photo-1447687643809-e05fd462f350-360x213.webp" alt="Card image cap">
+                    <div class="card-body bg-white text-left">
+                        <h3 title="Hello World" style="cursor: pointer;" class="card-title d-block font-weight-bold pt-3">Hello World</h3>
+                        <p class="card-text py-4 text-muted">Welcome to colorlib.com. This is our first post around Illdy WordPress theme. Now show that you can make out of it.…</p>
+                        <a title="Read More" href="#" class=" text-warning"> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Blog -->
+
+    <!-- Numbers -->
+    <section class="numbers py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 m-auto " style="transition-delay: 0.3s;">
+                    <span class="num1 text-light">
+                        0
+                    </span>
+                    <p>PROJECTS</p>
+                </div>
+
+                <div class="col-12 col-md-4 m-auto " style="transition-delay: 0.6s;">
+                    <span class="num2 text-light">
+                        0
+                    </span>
+                    <p>CLIENTS</p>
+                </div>
+
+                <div class="col-12 col-md-4 m-auto " style="transition-delay: 0.9s;">
+                    <span class="num3 text-light">
+                        0
+                    </span>
+                    <p>COFFES</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /Numbers -->
+
+    <!-- Team -->
+    <section id="team" class="text-center py-5 m-0 px-0 ">
+        <h2 class="font-weight-bold  head-hover d-inline" style="font-size: 2.5rem;opacity: 0.7;">Team</h2>
+        <span class="d-block text-muted " style="opacity: 0.7;">Meet the people that are
+            going to take your business to the next
+            level.</span>
+
+        <div class="container w-100" style="width: 100%;">
+            <div class="row">
+                <div class="d-flex py-5 col-12 col-md-4 fade-jr" style="transition-delay: 0.2s;">
+
+                    <img title="Mark Lawrance" src="images/hombre-joven-cara-alegre-estudiante-127x127.webp" class="col-md-4 my-auto" alt="">
+
+                    <div class="d-flex flex-column text-left w-100 col-md-8 justify-content-center" style="opacity: 0.7;">
+                        <h3 class="font-weight-bold">Mark Lawrance</h3>
+                        <h5 class="text-danger">Web Designer</h5>
+                        <p class="text-left text-muted pt-3">Creative, detail-oriented, always focused.</p>
+                        <span class="text-danger">
+                            <i title="Facebook" class="fab fa-facebook-f" class=""
+                                style="border-radius: 50%; border: 1px solid red;padding: 7px; "></i>
+                            <i title="Twitter" class="fab fa-twitter" class=""
+                                style="border-radius: 50%; border: 1px solid red;padding: 6px; "></i>
+                            <i title="LinkedIn" class="fab fa-linkedin-in" class=""
+                                style="border-radius: 50%; border: 1px solid red;padding: 7px; "></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="d-flex py-5 col-12 col-md-4 fade-jr" style="transition-delay: 0.4s;">
+
+                    <img title="Jane Stenton" src="images/front-page-team-2.jpg" class="col-md-4 my-auto" alt="">
+
+                    <div class="d-flex flex-column text-left w-100 col-md-8 justify-content-center" style="opacity: 0.7;">
+                        <h3 class="font-weight-bold">Jane Stenton</h3>
+                        <h5 class="text-warning">SEO Specialist</h5>
+                        <p class="text-left text-muted pt-3">Curious, tech-geeck and gets serious when it comes to work.
+                        </p>
+                        <span class="text-warning">
+                            <i title="Facebook" class="fab fa-facebook-f" class=""
+                                style="border-radius: 50%; border: 1px solid yellow;padding: 7px; "></i>
+                            <i title="Twitter" class="fab fa-twitter" class=""
+                                style="border-radius: 50%; border: 1px solid yellow;padding: 6px; "></i>
+                            <i title="LinkedIn" title="LinkedIn" class="fab fa-linkedin-in" class=""
+                                style="border-radius: 50%; border: 1px solid yellow;padding: 7px; "></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="d-flex py-5 col-12 col-md-4 fade-jr" style="transition-delay: 0.6s;">
+
+                    <img title="John Smith" src="images/mike-muller-127x127.webp" class="col-md-4 my-auto" alt="">
+
+                    <div class="d-flex flex-column text-left w-100 col-md-8 justify-content-center" style="opacity: 0.7;">
+                        <h3 class="font-weight-bold">John Smith</h3>
+                        <h5 class="text-info">Developer</h5>
+                        <p class="text-left text-muted pt-3">Enthusiastic, passionate with great sense of humor.</p>
+                        <span class="text-info">
+                            <i title="Facebook" class="fab fa-facebook-f" class=""
+                                style="border-radius: 50%; border: 1px solid rgb(106, 77, 138);padding: 7px; "></i>
+                            <i title="Twitter" class="fab fa-twitter" class=""
+                                style="border-radius: 50%; border: 1px solid rgb(106, 77, 138);padding: 6px; "></i>
+                            <i title="LinkedIn" class="fab fa-linkedin-in" class=""
+                                style="border-radius: 50%; border: 1px solid rgb(106, 77, 138);padding: 7px; "></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Team -->
+
+    <!-- Contact Us -->
+    <section id="contact" class="py-5 text-center w-100">
+        <h2 class="font-weight-bold text-center head-hover d-inline pb-3" style="font-size: 2.5rem;opacity: 0.7;">
+            Contact Us
+        </h2>
+        <div class="container pt-5">
+            <div class="upper row justify-content-around px-0 mx-0 w-100 py-2">
+                <div class="row justify-content-start my-2 col-12 col-lg-4 col-md-4 fade-jr text-center" style="transition-delay: 0.2s;">
+                    <h4 class="col-5 text-warning text-center">Address</h4 cl>
+                    <div class="row col-7 text-left">
+                        <p class="">Street 221B Baker Street, London, UK
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center my-2 col-12 col-lg-4 col-md-4 fade-jr text-center" style="transition-delay: 0.4s;">
+                    <h4 class="col-5 text-warning ">Customer Support</h4>
+                    <div class="row col-7 text-left">
+                        <p style="font-size:0.9rem">E-mail: contact@site.com Phone: (555) 555-5555</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center my-2 col-12 col-lg-4 col-md-4 fade-jr text-center" style="transition-delay: 0.6s;">
+                    <div class="text-warning">
+                        <span><i title="Twitter" class="fab fa-twitter"></i></span>
+                        <span><i title="Facebook" class="fab fa-facebook-f"></i></span>
+                        <span><i title="LinkedIn" class="fab fa-linkedin-in"></i></span>
+                    </div>
+                </div>
+            </div>
+            <form class="col-12 w-100 p-0 m-0 py-3 text-left">
+                <div class="row justify-content-around m-auto w-100  ">
+                    <div class="form-group col-12 col-lg-4 col-md-4 fade-jr" style="transition-delay: 0.2s;">
+                        <label for="exampleInputPassword1" class="my-0 py-0">Your Name (required)</label>
+                        <input type="text" class="form-control w-100 m-0 px-2" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group col-12 col-lg-4 col-md-4 fade-jr" style="transition-delay: 0.4s;">
+                        <label for="exampleInputEmail1" class="my-0 py-0">Your Email (required)</label>
+                        <input type="email" class="form-control w-100 px-2" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="form-group col-12 col-lg-4 col-md-4 fade-jr" style="transition-delay: 0.6s;">
+                        <label for="exampleInputSubject" class="my-0 py-0">Subject</label>
+                        <input type="text" class="form-control w-100 px-2" id="exampleInputSubject">
+                    </div>
+                </div>
+
+                <div class="row fade-jr m-auto" style="transition-delay: 0.4s;width: 97%;">
+                    <label for="exampleInputMessage">Your Message</label>
+                    <textarea name="" id="exampleInputMessage" cols="" rows="8" class="px-2 form-control w-100" style="width: 90%;"></textarea>
+                </div>
+                <div class="row fade-jr justify-content-end " style="transition-delay: 0.4s;">
+                    <button class="btn btn-warning my-3 px-5 font-weight-bold text-light" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- /Contact Us -->
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-left">
+                <div class="col-12 col-md-4">
+                    <h2>PRODUCT</h2>
+                    <ul class="p-3">
+                        <li><a href="#">Our Work</a></li>
+                        <li><a href="#">Club</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Announcement</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h2>INFORMATION</h2>
+                    <ul class="p-3">
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h2>SUPPORT</h2>
+                    <ul class="p-3">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">FaQs</a></li>
+                        <li><a href="#">Forms</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Copy Right -->
+    <div class="copy-right text-center py-4">
+        <p class="text-white animate-typing" data-animate-loop="true" data-type-speed="80" data-type-delay="800" data-remove-speed="50" data-remove-delay="2000"> Theme: Illdy.© Copyright 2017. All Rights Reserved.</p>
+    </div>
+    <!-- /Copy Right -->
+
+
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- ----------------------- -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+    </script>
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="js/jquery.numscroll.js"></script>
+    <!-- <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script> -->
+    <script src="js/floating-totop-button.min.js"></script>
+    <script src="js/jquery.animateTyping.js"></script>
+    <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+    <script src="js/FadeJr.min.js"></script>
+    <script src="js/jquery.waypoints.js"></script>
+    <script src="js/jquery.rcounter.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <script src="js/magicwand.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="node_modules/aos/dist/aos.js"></script> -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

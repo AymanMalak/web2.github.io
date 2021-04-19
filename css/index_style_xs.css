@@ -1,0 +1,73 @@
+#home {
+    background-image: url("../images/backgrounds/download.webp");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#home .content {
+    margin: auto 0;
+    text-align: center;
+}
+
+#home .content h2 {
+    padding-top: 150px 0 !important;
+    font-weight: 700;
+    font-size: 2.3rem !important;
+}
+
+#home .content button:first-of-type {
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all ease 0.7s;
+}
+
+#home .content button:first-of-type:hover {
+    background-color: #aaa;
+    color: #000;
+}
+
+#home .content button:nth-of-type(2) {
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all ease 0.7s;
+}
+
+#home .content button:nth-of-type(2):hover {
+    color: #000 !important;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+#testimonial {
+    width: 100% !important;
+}
+
+#testimonial h2 {
+    font-size: 2rem !important;
+}
+
+#testimonial button {
+    text-align: center;
+    font-weight: 700 !important;
+    font-size: 2rem !important;
+    margin: 0 50px;
+}
+
+#testimonial p {
+    font-size: 0.8rem !important;
+    font-weight: 400 !important;
+}
+
+#testimonial .owl-carousel h3 {
+    font-size: 1.4rem !important;
+}
+
+/* ------------------------------------------------------ */
+
+.web-design h2, .web-dev h2, .seo-analysis h2 {
+    font-size: 1.7rem !important;
+}
+
+.web-design p, .web-dev p, .seo-analysis p {
+    font-size: 0.8rem !important;
+}
